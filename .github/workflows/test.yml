@@ -4,8 +4,8 @@ on: [push]
 
 jobs:
   test-job:
-    # Hier achten wir exakt auf die Grossbuchstaben Ihrer VM:
-    runs-on: [self-hosted, Linux, X64]
+    # Jetzt mit exakten Strings in Anführungszeichen für den perfekten Match:
+    runs-on: ["self-hosted", "Linux", "X64"]
 
     steps:
       - name: Code aus dem Repository herunterladen
