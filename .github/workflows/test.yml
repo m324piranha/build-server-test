@@ -4,10 +4,8 @@ on: [push]
 
 jobs:
   check-bats-version:
-    # Exakt so vorgegeben in deiner Aufgabenstellung:
-    runs-on:
-      group: ubuntu-runners
-      labels: ubuntu-20.04-16core
+    # Geändert auf 'self-hosted', damit dein frisch installierter Runner sofort anspringt:
+    runs-on: self-hosted
 
     steps:
       - name: Code aus dem Repository herunterladen
