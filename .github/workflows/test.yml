@@ -1,11 +1,13 @@
-name: Mein Build Server Test
+name: Build Server Test
 
 on: [push]
 
 jobs:
-  test-job:
-    # Jetzt mit exakten Strings in Anführungszeichen für den perfekten Match:
-    runs-on: ["self-hosted", "Linux", "X64"]
+  check-bats-version:
+    # Exakt so vorgegeben in deiner Aufgabenstellung:
+    runs-on:
+      group: ubuntu-runners
+      labels: ubuntu-20.04-16core
 
     steps:
       - name: Code aus dem Repository herunterladen
@@ -16,4 +18,3 @@ jobs:
 
       - name: Prüfe ob Docker auf meiner VM funktioniert
         run: docker --version
-        # test  
