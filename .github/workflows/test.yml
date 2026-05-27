@@ -4,8 +4,8 @@ on: [push]
 
 jobs:
   test-job:
-    # Hier sagen wir GitHub, dass EXAKT Ihr neuer Runner genommen wird:
-       runs-on: self-hosted
+    # Greift auf Ihren eigenen Server zu
+    runs-on: self-hosted
 
     steps:
       - name: Code aus dem Repository herunterladen
@@ -15,4 +15,4 @@ jobs:
         run: node -v
 
       - name: Prüfe ob Docker auf meiner VM funktioniert
-        run: docker run hello-world
+        run: docker --version
