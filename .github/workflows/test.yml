@@ -5,7 +5,7 @@ on: [push]
 jobs:
   test-job:
     # Hier sagen wir GitHub, dass EXAKT Ihr neuer Runner genommen wird:
-    runs-on: [self-hosted, docker-capable]
+       runs-on: self-hosted
 
     steps:
       - name: Code aus dem Repository herunterladen
