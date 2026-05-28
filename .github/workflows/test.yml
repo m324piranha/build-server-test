@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   check-bats-version:
-    # Geändert auf 'self-hosted', damit dein frisch installierter Runner sofort anspringt:
+    # Hallo
     runs-on: self-hosted
 
     steps:
